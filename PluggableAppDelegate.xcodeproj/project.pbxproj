@@ -10,6 +10,20 @@
 		C64340192110F541004E9383 /* PluggableAppDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C643400F2110F541004E9383 /* PluggableAppDelegate.framework */; };
 		C643401E2110F541004E9383 /* PluggableAppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C643401D2110F541004E9383 /* PluggableAppDelegateTests.swift */; };
 		C64340202110F541004E9383 /* PluggableAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C64340122110F541004E9383 /* PluggableAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C643402B2110F66D004E9383 /* AppServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C643402A2110F66D004E9383 /* AppServicesManager.swift */; };
+		C643402D2110F727004E9383 /* AppServicesManager+AppInitializing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C643402C2110F727004E9383 /* AppServicesManager+AppInitializing.swift */; };
+		C643402F2110F761004E9383 /* AppServicesManager+WatchKitInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C643402E2110F761004E9383 /* AppServicesManager+WatchKitInteracting.swift */; };
+		C64340312110F773004E9383 /* AppServicesManager+URLOpening.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64340302110F773004E9383 /* AppServicesManager+URLOpening.swift */; };
+		C64340332110F78A004E9383 /* AppServicesManager+RemoteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64340322110F78A004E9383 /* AppServicesManager+RemoteNotification.swift */; };
+		C64340352110F7A7004E9383 /* AppServicesManager+InterfaceGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64340342110F7A7004E9383 /* AppServicesManager+InterfaceGeometry.swift */; };
+		C64340372110F7BF004E9383 /* AppServicesManager+HealthKitInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64340362110F7BF004E9383 /* AppServicesManager+HealthKitInteracting.swift */; };
+		C64340392110F7D3004E9383 /* AppServicesManager+HandlingActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64340382110F7D3004E9383 /* AppServicesManager+HandlingActions.swift */; };
+		C643403B2110F7E4004E9383 /* AppServicesManager+ExtensionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C643403A2110F7E4004E9383 /* AppServicesManager+ExtensionTypes.swift */; };
+		C643403D2110F805004E9383 /* AppServicesManager+DownloadingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C643403C2110F805004E9383 /* AppServicesManager+DownloadingData.swift */; };
+		C643403F2110F818004E9383 /* AppServicesManager+Continuing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C643403E2110F818004E9383 /* AppServicesManager+Continuing.swift */; };
+		C64340412110F82D004E9383 /* AppServicesManager+CloudKitHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64340402110F82D004E9383 /* AppServicesManager+CloudKitHandling.swift */; };
+		C64340432110F841004E9383 /* AppServicesManager+AppStateRestoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64340422110F841004E9383 /* AppServicesManager+AppStateRestoration.swift */; };
+		C64340452110F855004E9383 /* AppServicesManager+AppStateAndSystemEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64340442110F855004E9383 /* AppServicesManager+AppStateAndSystemEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +43,20 @@
 		C64340182110F541004E9383 /* PluggableAppDelegateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PluggableAppDelegateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C643401D2110F541004E9383 /* PluggableAppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluggableAppDelegateTests.swift; sourceTree = "<group>"; };
 		C643401F2110F541004E9383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C643402A2110F66D004E9383 /* AppServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServicesManager.swift; sourceTree = "<group>"; };
+		C643402C2110F727004E9383 /* AppServicesManager+AppInitializing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+AppInitializing.swift"; sourceTree = "<group>"; };
+		C643402E2110F761004E9383 /* AppServicesManager+WatchKitInteracting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+WatchKitInteracting.swift"; sourceTree = "<group>"; };
+		C64340302110F773004E9383 /* AppServicesManager+URLOpening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+URLOpening.swift"; sourceTree = "<group>"; };
+		C64340322110F78A004E9383 /* AppServicesManager+RemoteNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+RemoteNotification.swift"; sourceTree = "<group>"; };
+		C64340342110F7A7004E9383 /* AppServicesManager+InterfaceGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+InterfaceGeometry.swift"; sourceTree = "<group>"; };
+		C64340362110F7BF004E9383 /* AppServicesManager+HealthKitInteracting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+HealthKitInteracting.swift"; sourceTree = "<group>"; };
+		C64340382110F7D3004E9383 /* AppServicesManager+HandlingActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+HandlingActions.swift"; sourceTree = "<group>"; };
+		C643403A2110F7E4004E9383 /* AppServicesManager+ExtensionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+ExtensionTypes.swift"; sourceTree = "<group>"; };
+		C643403C2110F805004E9383 /* AppServicesManager+DownloadingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+DownloadingData.swift"; sourceTree = "<group>"; };
+		C643403E2110F818004E9383 /* AppServicesManager+Continuing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+Continuing.swift"; sourceTree = "<group>"; };
+		C64340402110F82D004E9383 /* AppServicesManager+CloudKitHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+CloudKitHandling.swift"; sourceTree = "<group>"; };
+		C64340422110F841004E9383 /* AppServicesManager+AppStateRestoration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+AppStateRestoration.swift"; sourceTree = "<group>"; };
+		C64340442110F855004E9383 /* AppServicesManager+AppStateAndSystemEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+AppStateAndSystemEvents.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +81,7 @@
 		C64340052110F541004E9383 = {
 			isa = PBXGroup;
 			children = (
+				C64340292110F590004E9383 /* Sources */,
 				C64340112110F541004E9383 /* PluggableAppDelegate */,
 				C643401C2110F541004E9383 /* PluggableAppDelegateTests */,
 				C64340102110F541004E9383 /* Products */,
@@ -84,6 +113,27 @@
 				C643401F2110F541004E9383 /* Info.plist */,
 			);
 			path = PluggableAppDelegateTests;
+			sourceTree = "<group>";
+		};
+		C64340292110F590004E9383 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C643402A2110F66D004E9383 /* AppServicesManager.swift */,
+				C643402C2110F727004E9383 /* AppServicesManager+AppInitializing.swift */,
+				C64340442110F855004E9383 /* AppServicesManager+AppStateAndSystemEvents.swift */,
+				C64340422110F841004E9383 /* AppServicesManager+AppStateRestoration.swift */,
+				C64340402110F82D004E9383 /* AppServicesManager+CloudKitHandling.swift */,
+				C643403E2110F818004E9383 /* AppServicesManager+Continuing.swift */,
+				C643403C2110F805004E9383 /* AppServicesManager+DownloadingData.swift */,
+				C643403A2110F7E4004E9383 /* AppServicesManager+ExtensionTypes.swift */,
+				C64340382110F7D3004E9383 /* AppServicesManager+HandlingActions.swift */,
+				C64340362110F7BF004E9383 /* AppServicesManager+HealthKitInteracting.swift */,
+				C64340342110F7A7004E9383 /* AppServicesManager+InterfaceGeometry.swift */,
+				C64340322110F78A004E9383 /* AppServicesManager+RemoteNotification.swift */,
+				C64340302110F773004E9383 /* AppServicesManager+URLOpening.swift */,
+				C643402E2110F761004E9383 /* AppServicesManager+WatchKitInteracting.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +198,7 @@
 				TargetAttributes = {
 					C643400E2110F541004E9383 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					C64340172110F541004E9383 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +245,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64340332110F78A004E9383 /* AppServicesManager+RemoteNotification.swift in Sources */,
+				C643403F2110F818004E9383 /* AppServicesManager+Continuing.swift in Sources */,
+				C64340352110F7A7004E9383 /* AppServicesManager+InterfaceGeometry.swift in Sources */,
+				C64340412110F82D004E9383 /* AppServicesManager+CloudKitHandling.swift in Sources */,
+				C643403D2110F805004E9383 /* AppServicesManager+DownloadingData.swift in Sources */,
+				C643403B2110F7E4004E9383 /* AppServicesManager+ExtensionTypes.swift in Sources */,
+				C64340312110F773004E9383 /* AppServicesManager+URLOpening.swift in Sources */,
+				C64340452110F855004E9383 /* AppServicesManager+AppStateAndSystemEvents.swift in Sources */,
+				C643402D2110F727004E9383 /* AppServicesManager+AppInitializing.swift in Sources */,
+				C64340392110F7D3004E9383 /* AppServicesManager+HandlingActions.swift in Sources */,
+				C64340372110F7BF004E9383 /* AppServicesManager+HealthKitInteracting.swift in Sources */,
+				C64340432110F841004E9383 /* AppServicesManager+AppStateRestoration.swift in Sources */,
+				C643402F2110F761004E9383 /* AppServicesManager+WatchKitInteracting.swift in Sources */,
+				C643402B2110F66D004E9383 /* AppServicesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +404,7 @@
 		C64340242110F541004E9383 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -348,6 +414,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PluggableAppDelegate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pchelnikov.PluggableAppDelegate;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +432,7 @@
 		C64340252110F541004E9383 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -373,6 +442,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PluggableAppDelegate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +459,7 @@
 		C64340272110F541004E9383 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D54US7N29T;
 				INFOPLIST_FILE = PluggableAppDelegateTests/Info.plist;
@@ -407,6 +478,7 @@
 		C64340282110F541004E9383 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D54US7N29T;
 				INFOPLIST_FILE = PluggableAppDelegateTests/Info.plist;
