@@ -104,8 +104,8 @@
 		C64340052110F541004E9383 = {
 			isa = PBXGroup;
 			children = (
-				C643404B2110FA39004E9383 /* Example */,
 				C64340292110F590004E9383 /* Sources */,
+				C643404B2110FA39004E9383 /* Example */,
 				C64340112110F541004E9383 /* PluggableAppDelegate */,
 				C643401C2110F541004E9383 /* PluggableAppDelegateTests */,
 				C64340102110F541004E9383 /* Products */,
