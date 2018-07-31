@@ -11,13 +11,13 @@ A lightweight service-oriented ApplicationDelegate for iOS, made in Swift. Based
 
 `AppDelegate` is a traditional example of bad code. Lots of lines of code that makes so much different things are put together in methods that are called within the application life cycle. But all of those concerns are over.
 
-Using `PluggableAppDelegate` you separate AppDelegate from the services that you can plug to it. Each `ApplicationService` has its own life cycle that is shared with `AppDelegate`.
+Using `PluggableAppDelegate` you separate `AppDelegate` from the services that you can plug to it. Each `ApplicationService` has its own life cycle that is shared with `AppDelegate`.
 
 ## Requirements
 
 - iOS 9.0+
-- Xcode 9.0+
-- Swift 4.0+
+- Xcode 9.3+
+- Swift 4.1
 
 ## Usage
 
