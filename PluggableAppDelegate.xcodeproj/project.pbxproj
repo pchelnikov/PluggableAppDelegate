@@ -31,6 +31,7 @@
 		C64340612110FBA4004E9383 /* LoggerApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C643405F2110FB9F004E9383 /* LoggerApplicationService.swift */; };
 		C64340632110FC58004E9383 /* PluggableAppDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C643400F2110F541004E9383 /* PluggableAppDelegate.framework */; };
 		C64340662111013A004E9383 /* RootVCApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6434064211100FC004E9383 /* RootVCApplicationService.swift */; };
+		C69190AB21139DC60096CE0C /* AppServicesManager+SiriKitHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69190AA21139DC60096CE0C /* AppServicesManager+SiriKitHandling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		C64340582110FA3B004E9383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C643405F2110FB9F004E9383 /* LoggerApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerApplicationService.swift; sourceTree = "<group>"; };
 		C6434064211100FC004E9383 /* RootVCApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVCApplicationService.swift; sourceTree = "<group>"; };
+		C69190AA21139DC60096CE0C /* AppServicesManager+SiriKitHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+SiriKitHandling.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				C64340362110F7BF004E9383 /* AppServicesManager+HealthKitInteracting.swift */,
 				C64340342110F7A7004E9383 /* AppServicesManager+InterfaceGeometry.swift */,
 				C64340322110F78A004E9383 /* AppServicesManager+RemoteNotification.swift */,
+				C69190AA21139DC60096CE0C /* AppServicesManager+SiriKitHandling.swift */,
 				C64340302110F773004E9383 /* AppServicesManager+URLOpening.swift */,
 				C643402E2110F761004E9383 /* AppServicesManager+WatchKitInteracting.swift */,
 			);
@@ -350,6 +353,7 @@
 				C643402D2110F727004E9383 /* AppServicesManager+AppInitializing.swift in Sources */,
 				C64340392110F7D3004E9383 /* AppServicesManager+HandlingActions.swift in Sources */,
 				C64340372110F7BF004E9383 /* AppServicesManager+HealthKitInteracting.swift in Sources */,
+				C69190AB21139DC60096CE0C /* AppServicesManager+SiriKitHandling.swift in Sources */,
 				C64340432110F841004E9383 /* AppServicesManager+AppStateRestoration.swift in Sources */,
 				C643402F2110F761004E9383 /* AppServicesManager+WatchKitInteracting.swift in Sources */,
 				C643402B2110F66D004E9383 /* AppServicesManager.swift in Sources */,

@@ -23,4 +23,18 @@ extension PluggableApplicationDelegate {
             service.application?(application, didChangeStatusBarOrientation: oldStatusBarOrientation)
         }
     }
+
+    @available(iOS 2.0, *)
+    open func application(_ application: UIApplication, willChangeStatusBarFrame newStatusBarFrame: CGRect) {
+        for service in _services {
+            service.application?(application, willChangeStatusBarFrame: newStatusBarFrame)
+        }
+    }
+
+    @available(iOS 2.0, *)
+    open func application(_ application: UIApplication, didChangeStatusBarFrame oldStatusBarFrame: CGRect) {
+        for service in _services {
+            service.application?(application, didChangeStatusBarFrame: oldStatusBarFrame)
+        }
+    }
 }

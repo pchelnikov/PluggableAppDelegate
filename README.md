@@ -102,6 +102,10 @@ Michael Pchelnikov
 
 You can follow me on Twitter at [@pchelnikov](http://twitter.com/pchelnikov)
 
+## Credits
+
+[Fernando Martín Ortiz](https://github.com/fmo91)
+
 ## License
 
 PluggableAppDelegate is available under the MIT license. See the LICENSE file for more info.
