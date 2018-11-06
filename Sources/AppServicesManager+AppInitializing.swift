@@ -11,7 +11,7 @@ import UIKit
 extension PluggableApplicationDelegate {
 
     @available(iOS 6.0, *)
-    open func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]? = nil) -> Bool {
+    open func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         var result = false
         for service in _services {
             if service.application?(application, willFinishLaunchingWithOptions: launchOptions) ?? false {
@@ -22,7 +22,7 @@ extension PluggableApplicationDelegate {
     }
 
     @available(iOS 3.0, *)
-    open func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]? = nil) -> Bool {
+    open func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         var result = false
         for service in _services {
             if service.application?(application, didFinishLaunchingWithOptions: launchOptions) ?? false {

@@ -12,7 +12,7 @@ import PluggableAppDelegate
 
 final class LoggerApplicationService: NSObject, ApplicationService {
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         print("🎉 LoggerApplicationService has started!")
         return true
     }
