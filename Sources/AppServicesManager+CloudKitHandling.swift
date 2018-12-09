@@ -15,7 +15,7 @@ extension PluggableApplicationDelegate {
     // You should use the CKShareMetadata object's shareURL and containerIdentifier to schedule a CKAcceptSharesOperation, then start using
     // the resulting CKShare and its associated record(s), which will appear in the CKContainer's shared database in a zone matching that of the record's owner.
     @available(iOS 10.0, *)
-    open func application(_ application: UIApplication, userDidAcceptCloudKitShareWith cloudKitShareMetadata: CKShareMetadata) {
+    open func application(_ application: UIApplication, userDidAcceptCloudKitShareWith cloudKitShareMetadata: CKShare.Metadata) {
         for service in _services {
             service.application?(application, userDidAcceptCloudKitShareWith: cloudKitShareMetadata)
         }
