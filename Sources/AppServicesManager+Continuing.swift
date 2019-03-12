@@ -34,7 +34,7 @@ extension PluggableApplicationDelegate {
         let returns = apply({ (service, restorationHandler) -> Bool? in
             service.application?(application, continue: userActivity, restorationHandler: restorationHandler)
         }, completionHandler: { results in
-            let result = results.reduce([], { $0 + ($1 ?? []) }) as! [UIUserActivityRestoring]
+            let result = results.reduce([], { $0 + ($1 ?? []) }) 
             restorationHandler(result)
         })
 
