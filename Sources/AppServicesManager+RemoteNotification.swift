@@ -50,7 +50,14 @@ extension PluggableApplicationDelegate {
     @available(iOS, introduced: 8.0, deprecated: 10.0, message: "Use UserNotifications Framework's -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:]")
     open func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, completionHandler: @escaping () -> Swift.Void) {
         apply({ (service, completion) -> Void? in
-            service.application?(application, handleActionWithIdentifier: identifier, for: notification, completionHandler: completion)
+            service.application?(
+				application,
+				handleActionWithIdentifier: identifier,
+				for: notification,
+				completionHandler: {
+					completion(())
+				}
+			)
         }, completionHandler: { _ in
             completionHandler()
         })
@@ -59,7 +66,15 @@ extension PluggableApplicationDelegate {
     @available(iOS, introduced: 9.0, deprecated: 10.0, message: "Use UserNotifications Framework's -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:]")
     open func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [AnyHashable: Any], withResponseInfo responseInfo: [AnyHashable: Any], completionHandler: @escaping () -> Swift.Void) {
         apply({ (service, completionHandler) -> Void? in
-            service.application?(application, handleActionWithIdentifier: identifier, forRemoteNotification: userInfo, withResponseInfo: responseInfo, completionHandler: completionHandler)
+            service.application?(
+				application,
+				handleActionWithIdentifier: identifier,
+				forRemoteNotification: userInfo,
+				withResponseInfo: responseInfo,
+				completionHandler: {
+					completionHandler(())
+				}
+			)
         }, completionHandler: { _ in
             completionHandler()
         })
@@ -71,7 +86,14 @@ extension PluggableApplicationDelegate {
     @available(iOS, introduced: 8.0, deprecated: 10.0, message: "Use UserNotifications Framework's -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:]")
     open func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [AnyHashable: Any], completionHandler: @escaping () -> Swift.Void) {
         apply({ (service, completionHandler) -> Void? in
-            service.application?(application, handleActionWithIdentifier: identifier, forRemoteNotification: userInfo, completionHandler: completionHandler)
+            service.application?(
+				application,
+				handleActionWithIdentifier: identifier,
+				forRemoteNotification: userInfo,
+				completionHandler: {
+					completionHandler(())
+				}
+			)
         }, completionHandler: { _ in
             completionHandler()
         })
@@ -79,8 +101,18 @@ extension PluggableApplicationDelegate {
 
     @available(iOS, introduced: 9.0, deprecated: 10.0, message: "Use UserNotifications Framework's -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:]")
     open func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, withResponseInfo responseInfo: [AnyHashable: Any], completionHandler: @escaping () -> Swift.Void) {
+
+
         apply({ (service, completionHandler) -> Void? in
-            service.application?(application, handleActionWithIdentifier: identifier, for: notification, withResponseInfo: responseInfo, completionHandler: completionHandler)
+            service.application?(
+				application,
+				handleActionWithIdentifier: identifier,
+				for: notification,
+				withResponseInfo: responseInfo,
+				completionHandler: {
+					completionHandler(())
+				}
+			)
         }, completionHandler: { _ in
             completionHandler()
         })

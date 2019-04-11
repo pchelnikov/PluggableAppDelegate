@@ -27,11 +27,21 @@ extension PluggableApplicationDelegate {
     // callbacks. If such a session has already been created (if the app is being resumed, for instance), then the delegate will start receiving
     // callbacks without any action by the application. You should call the completionHandler as soon as you're finished handling the callbacks.
     @available(iOS 7.0, *)
-    open func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Swift.Void) {
-        apply({ (service, completionHandler) -> Void? in
-            service.application?(application, handleEventsForBackgroundURLSession: identifier, completionHandler: completionHandler)
-        }, completionHandler: { _ in
-            completionHandler()
-        })
+    open func application(
+		_ application: UIApplication,
+		handleEventsForBackgroundURLSession identifier: String,
+		completionHandler: @escaping () -> Void
+	) {
+		apply({ (service, completionHandler) -> Void? in
+			service.application?(
+				application,
+				handleEventsForBackgroundURLSession: identifier,
+				completionHandler: {
+					completionHandler(())
+				}
+			)
+		}, completionHandler: { results in
+			completionHandler()
+		})
     }
 }

@@ -20,7 +20,6 @@ extension ApplicationService {
 }
 
 open class PluggableApplicationDelegate: UIResponder, UIApplicationDelegate {
-
     public var window: UIWindow?
 
     open var services: [ApplicationService] { return [] }
