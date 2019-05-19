@@ -16,8 +16,8 @@ Using `PluggableAppDelegate` you separate `AppDelegate` from the services that y
 ## Requirements
 
 - iOS 9.0+
-- Xcode 10.0+
-- Swift 4.2
+- Xcode 10.2+
+- Swift 5.0
 
 ## Usage
 

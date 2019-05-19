@@ -30,7 +30,7 @@ extension PluggableApplicationDelegate {
     // invoked with the user activity. Invoking the restorationHandler is optional. It may be copied and invoked later, and it will bounce to the main thread to complete its work and call
     // restoreUserActivityState on all objects.
     @available(iOS 8.0, *)
-    open func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Swift.Void) -> Bool {
+    open func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         let returns = apply({ (service, restorationHandler) -> Bool? in
             service.application?(application, continue: userActivity, restorationHandler: restorationHandler)
         }, completionHandler: { results in

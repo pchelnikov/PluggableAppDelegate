@@ -12,7 +12,7 @@ extension PluggableApplicationDelegate {
 
     /// Applications with the "fetch" background mode may be given opportunities to fetch updated content in the background or when it is convenient for the system. This method will be called in these situations. You should call the fetchCompletionHandler as soon as you're finished performing that operation, so the system can accurately estimate its power and data cost.
     @available(iOS 7.0, *)
-    open func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Swift.Void) {
+    open func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         apply({ (service, completionHandler) -> Void? in
             service.application?(application, performFetchWithCompletionHandler: completionHandler)
         }, completionHandler: { results in
@@ -27,9 +27,14 @@ extension PluggableApplicationDelegate {
     // callbacks. If such a session has already been created (if the app is being resumed, for instance), then the delegate will start receiving
     // callbacks without any action by the application. You should call the completionHandler as soon as you're finished handling the callbacks.
     @available(iOS 7.0, *)
-    open func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Swift.Void) {
+    open func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
         apply({ (service, completionHandler) -> Void? in
-            service.application?(application, handleEventsForBackgroundURLSession: identifier, completionHandler: completionHandler)
+            service.application?(
+                application,
+                handleEventsForBackgroundURLSession: identifier,
+                completionHandler: {
+                    completionHandler(())
+            })
         }, completionHandler: { _ in
             completionHandler()
         })

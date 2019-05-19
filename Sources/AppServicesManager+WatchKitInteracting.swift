@@ -11,7 +11,7 @@ import UIKit
 extension PluggableApplicationDelegate {
 
     @available(iOS 8.2, *)
-    open func application(_ application: UIApplication, handleWatchKitExtensionRequest userInfo: [AnyHashable: Any]?, reply: @escaping ([AnyHashable: Any]?) -> Swift.Void) {
+    open func application(_ application: UIApplication, handleWatchKitExtensionRequest userInfo: [AnyHashable: Any]?, reply: @escaping ([AnyHashable: Any]?) -> Void) {
         for service in _services {
             service.application?(application, handleWatchKitExtensionRequest: userInfo, reply: reply)
         }

@@ -25,12 +25,12 @@ open class PluggableApplicationDelegate: UIResponder, UIApplicationDelegate {
 
     open var services: [ApplicationService] { return [] }
 
-    internal lazy var _services: [ApplicationService] = {
+    lazy var _services: [ApplicationService] = {
         return self.services
     }()
 
     @discardableResult
-    internal func apply<T, S>(_ work: (ApplicationService, @escaping (T) -> Void) -> S?, completionHandler: @escaping ([T]) -> Swift.Void) -> [S] {
+    internal func apply<T, S>(_ work: (ApplicationService, @escaping (T) -> Void) -> S?, completionHandler: @escaping ([T]) -> Void) -> [S] {
         let dispatchGroup = DispatchGroup()
         var results: [T] = []
         var returns: [S] = []
