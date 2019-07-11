@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		244D55A922CA554E0029843F /* AppServicesManager+UNUserNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D55A822CA554D0029843F /* AppServicesManager+UNUserNotification.swift */; };
+		244D55AA22CA59790029843F /* PluggableAppDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C643400F2110F541004E9383 /* PluggableAppDelegate.framework */; };
+		244D55AB22CA59790029843F /* PluggableAppDelegate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C643400F2110F541004E9383 /* PluggableAppDelegate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C64340192110F541004E9383 /* PluggableAppDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C643400F2110F541004E9383 /* PluggableAppDelegate.framework */; };
 		C643401E2110F541004E9383 /* PluggableAppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C643401D2110F541004E9383 /* PluggableAppDelegateTests.swift */; };
 		C64340202110F541004E9383 /* PluggableAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C64340122110F541004E9383 /* PluggableAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,12 +32,18 @@
 		C64340542110FA3B004E9383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64340532110FA3B004E9383 /* Assets.xcassets */; };
 		C64340572110FA3B004E9383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64340552110FA3B004E9383 /* LaunchScreen.storyboard */; };
 		C64340612110FBA4004E9383 /* LoggerApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C643405F2110FB9F004E9383 /* LoggerApplicationService.swift */; };
-		C64340632110FC58004E9383 /* PluggableAppDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C643400F2110F541004E9383 /* PluggableAppDelegate.framework */; };
 		C64340662111013A004E9383 /* RootVCApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6434064211100FC004E9383 /* RootVCApplicationService.swift */; };
 		C69190AB21139DC60096CE0C /* AppServicesManager+SiriKitHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69190AA21139DC60096CE0C /* AppServicesManager+SiriKitHandling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		244D55AC22CA59790029843F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C64340062110F541004E9383 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C643400E2110F541004E9383;
+			remoteInfo = PluggableAppDelegate;
+		};
 		C643401A2110F541004E9383 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C64340062110F541004E9383 /* Project object */;
@@ -44,6 +52,20 @@
 			remoteInfo = PluggableAppDelegate;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		244D55AE22CA59790029843F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				244D55AB22CA59790029843F /* PluggableAppDelegate.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		244D55A822CA554D0029843F /* AppServicesManager+UNUserNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+UNUserNotification.swift"; sourceTree = "<group>"; };
@@ -98,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C64340632110FC58004E9383 /* PluggableAppDelegate.framework in Frameworks */,
+				244D55AA22CA59790029843F /* PluggableAppDelegate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +284,12 @@
 				C64340462110FA39004E9383 /* Sources */,
 				C64340472110FA39004E9383 /* Frameworks */,
 				C64340482110FA39004E9383 /* Resources */,
+				244D55AE22CA59790029843F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				244D55AD22CA59790029843F /* PBXTargetDependency */,
 			);
 			name = PluggableAppDelegateExample;
 			productName = PluggableAppDelegateExample;
@@ -388,6 +412,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		244D55AD22CA59790029843F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C643400E2110F541004E9383 /* PluggableAppDelegate */;
+			targetProxy = 244D55AC22CA59790029843F /* PBXContainerItemProxy */;
+		};
 		C643401B2110F541004E9383 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C643400E2110F541004E9383 /* PluggableAppDelegate */;
@@ -623,6 +652,7 @@
 		C643405A2110FA3B004E9383 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D54US7N29T;
@@ -642,6 +672,7 @@
 		C643405B2110FA3B004E9383 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D54US7N29T;
