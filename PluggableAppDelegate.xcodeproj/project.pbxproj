@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244D55A922CA554E0029843F /* AppServicesManager+UNUserNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D55A822CA554D0029843F /* AppServicesManager+UNUserNotification.swift */; };
 		244D55AA22CA59790029843F /* PluggableAppDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C643400F2110F541004E9383 /* PluggableAppDelegate.framework */; };
 		244D55AB22CA59790029843F /* PluggableAppDelegate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C643400F2110F541004E9383 /* PluggableAppDelegate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C64340192110F541004E9383 /* PluggableAppDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C643400F2110F541004E9383 /* PluggableAppDelegate.framework */; };
@@ -67,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		244D55A822CA554D0029843F /* AppServicesManager+UNUserNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppServicesManager+UNUserNotification.swift"; sourceTree = "<group>"; };
 		C643400F2110F541004E9383 /* PluggableAppDelegate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PluggableAppDelegate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64340122110F541004E9383 /* PluggableAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluggableAppDelegate.h; sourceTree = "<group>"; };
 		C64340132110F541004E9383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				C69190AA21139DC60096CE0C /* AppServicesManager+SiriKitHandling.swift */,
 				C64340302110F773004E9383 /* AppServicesManager+URLOpening.swift */,
 				C643402E2110F761004E9383 /* AppServicesManager+WatchKitInteracting.swift */,
+				244D55A822CA554D0029843F /* AppServicesManager+UNUserNotification.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				C64340452110F855004E9383 /* AppServicesManager+AppStateAndSystemEvents.swift in Sources */,
 				C643402D2110F727004E9383 /* AppServicesManager+AppInitializing.swift in Sources */,
 				C64340392110F7D3004E9383 /* AppServicesManager+HandlingActions.swift in Sources */,
+				244D55A922CA554E0029843F /* AppServicesManager+UNUserNotification.swift in Sources */,
 				C64340372110F7BF004E9383 /* AppServicesManager+HealthKitInteracting.swift in Sources */,
 				C69190AB21139DC60096CE0C /* AppServicesManager+SiriKitHandling.swift in Sources */,
 				C64340432110F841004E9383 /* AppServicesManager+AppStateRestoration.swift in Sources */,

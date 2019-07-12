@@ -8,10 +8,11 @@
 //
 
 import UIKit
+import UserNotifications
 
 /// This is only a tagging protocol.
 /// It doesn't add more functionalities yet.
-public protocol ApplicationService: UIApplicationDelegate {}
+public protocol ApplicationService: UIApplicationDelegate, UNUserNotificationCenterDelegate {}
 
 extension ApplicationService {
     public var window: UIWindow? {
