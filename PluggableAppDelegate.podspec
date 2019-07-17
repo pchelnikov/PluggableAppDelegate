@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PluggableAppDelegate'
-  s.version          = '1.2.0'
+  s.version          = '1.3.0'
   s.summary          = 'A lightweight service-oriented ApplicationDelegate for iOS, made in Swift.'
   s.description      = 'Using PluggableAppDelegate you separate AppDelegate from the services that you can plug to it. Each ApplicationService has its own life cycle that is shared with AppDelegate.'
   s.homepage         = 'https://github.com/pchelnikov/PluggableAppDelegate'
