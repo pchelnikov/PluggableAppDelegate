@@ -19,9 +19,11 @@ class AppDelegate: PluggableApplicationDelegate {
             LoggerApplicationService()
         ]
     }
+}
 
-    override init() {
-        super.init()
+extension AppDelegate {
+    override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
+        return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 }

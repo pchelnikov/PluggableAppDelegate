@@ -13,16 +13,30 @@ extension PluggableApplicationDelegate: UNUserNotificationCenterDelegate {
 
     @available(iOS 10.0, *)
     public func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        for service in _services {
-            service.userNotificationCenter?(center, willPresent: notification, withCompletionHandler: completionHandler)
-        }
+        apply({ (service, completion) -> Void? in
+            service.userNotificationCenter?(
+                center,
+                willPresent: notification,
+                withCompletionHandler: { opt in
+                    completion(opt)
+            })
+        }, completionHandler: { options in
+            completionHandler(UNNotificationPresentationOptions(options))
+        })
     }
 
     @available(iOS 10.0, *)
     public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        for service in _services {
-            service.userNotificationCenter?(center, didReceive: response, withCompletionHandler: completionHandler)
-        }
+        apply({ (service, completion) -> Void? in
+            service.userNotificationCenter?(
+                center,
+                didReceive: response,
+                withCompletionHandler: {
+                    completion(())
+            })
+        }, completionHandler: { _ in
+            completionHandler()
+        })
     }
 
 
